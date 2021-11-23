@@ -1,0 +1,106 @@
+<html>
+    <head> 
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <title>My Card Component</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Outfit');
+            body{
+                background-color: hsl(217, 54%, 11%);
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Outfit';
+            }
+            html{
+                --primary_color:hsl(215, 51%, 70%);
+            }
+            #container{
+                position: relative;
+                margin: 0px auto;
+                width: 400px;
+                height:640px;
+                border-radius: 20px;
+                background-color: hsl(216, 50%, 16%);
+                top: 150px;
+                padding: 10px;
+                box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.2),  -10px -10px 8px 10px rgba(0, 0, 0, 0.1) ;
+            }
+            #img1{
+                box-sizing: border-box;
+                position: relative;
+                display: inline-block;
+                width: 360px;
+                margin: 20px 20px 10px 20px;
+                border-radius: 10px 10px 10px 10px;
+                height: 55%;
+                object-fit: cover;    
+                    }
+            p{
+                        font-size: 18px;
+                        color:var(--primary_color);
+                        font-weight: 300;
+                        margin: 10px;
+                    }
+            h1{
+                    color: hsl(0, 0%, 100%);
+                    font-weight:500;
+                    margin: 10px;
+                    font-size: 25px;
+                    
+                    }
+            #words{
+                        margin: 20px 20px 5px 20px;
+                    }
+            .cran{
+                        color: hsl(178, 100%, 50%);
+                        font-weight: 500;
+                    }
+            #grid-container{
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        width: 360px;
+                        margin: auto;
+                        
+                    }
+            .avatar{
+                width: 45px;
+                margin: 0px 20px;
+            }
+            .footer{
+                margin: 5px 20px;
+                box-sizing: border-box;  
+            }
+            #grid-container1{
+                        display: grid;
+                        grid-template-columns: 20% 80%;
+                        width: 360px;
+                        margin: 5px;
+            }
+            .line{
+                width: 360px;
+                margin: 0 auto 20px auto;
+                height: 1px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div id= "container">
+            <img id="img1" src="images/image-equilibrium.jpg">
+            <div id="words">
+                <h1>Equilibrium #3429 </h1>
+                <p> Our equilibrium collection promotes balance and calm <p>
+                <div id= "grid-container">
+                    <div id="grid1">  <p class="cran" > <img src="images/icon-ethereum.svg"> 0041 Eth <p></div>
+                    <div id="grid2"> <p> <img src="images/icon-clock.svg"> Only 3 days left <p> </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer" id="grid-container1">
+              <div id= "grid3"> <img class="avatar" src="images/image-avatar.png">  </div>
+                <div id="grid4"> <p>  Creation of <a href="https://github.com/MarthaAdhiambo/marthaadhiambo.github.io" target="_blank" > Martha Adhiambo</a></p></div>
+            </div>
+        </div>
+</body>
+</html>
